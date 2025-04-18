@@ -60,29 +60,29 @@ router.get('/', async (req, res) => {
 ✨ *DAVINCS-MD-WABOT SESSION CONNECTED* ✨
 
 ━━━━━━━━━━━━━━━━━━━━━
-💎 *Enjoy Using Davincs_md* 💎
+↪️🧃 *Enjoy Using vw golf* 🧃↩️
 ━━━━━━━━━━━━━━━━━━━━━
 
 ⚡ *Stay Updated!* ⚡
 Join our official channel for:
-✅ Latest features
-✅ Exclusive updates
-✅ Pro tips & tricks
-🔗 » https://whatsapp.com/channel/0029VakSTEQGZNCk6CqE9E2P
+✅🧃 Latest features
+✅🧃 Exclusive updates
+✅🧃 Pro tips & tricks
+🔗 » https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T
 
 ━━━━━━━━━━━━━━━━━━━━━
-💻 *Developer Resources* 💻
-📌 GitHub: https://github.com/9Wish882/DAVINCS-MD
+↪️ *Developer Resources* ↩️
+📌 GitHub: https://github.com/NjabuloJ/Njabulo-Jb-vw-golf 
 🌟 Don't forget to ⭐ star & fork the repo!
 
-🛠 *Need Help?* 
-💬 Contact Developer: https://wa.me/255759637644
+🚨 *Need Help?* 🚨
+💬 Contact Developer: https://wa.me/26777821911
 
 ━━━━━━━━━━━━━━━━━━━━━
 🎨 *CREATED WITH PASSION BY* 🎨
-🔥 ALLAN @ DAVINCS 🔥
+↪️🧃 SIR @ NJABULO JB 🧃↩️
 
-💖 Support the project by giving a star! 
+↪️🧃 Support the project by giving a star! 
 Your appreciation motivates us to innovate more!
 ━━━━━━━━━━━━━━━━━━━━━`
  await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id,{text:GIFTED_MD_TEXT},{quoted:session})
