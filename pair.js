@@ -57,10 +57,10 @@ router.get('/', async (req, res) => {
                let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: '' + b64data });
 
                let GIFTED_MD_TEXT = `
-↪️🧃 *VW-GOLF-WABOT SESSION CONNECTED* 🧃↩️
+↪️🧃 *NJABULO_JB-WABOT SESSION CONNECTED* 🧃↩️
 
 ━━━━━━━━━━━━━━━━━━━━━
-↪️🧃 *Enjoy Using vw golf* 🧃↩️
+↪️🧃 *Enjoy Using Njabulo Jb* 🧃↩️
 ━━━━━━━━━━━━━━━━━━━━━
 
 ⚡ *Stay Updated!* ⚡
@@ -72,7 +72,7 @@ Join our official channel for:
 
 ━━━━━━━━━━━━━━━━━━━━━
 ↪️ *Developer Resources* ↩️
-📌 GitHub: https://github.com/NjabuloJ/Njabulo-Jb-vw-golf 
+📌 GitHub: https://github.com/NjabuloJ/Njabulo-Jb 
 🌟 Don't forget to ⭐ star & fork the repo!
 
 🚨 *Need Help?* 🚨
