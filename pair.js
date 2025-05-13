@@ -57,36 +57,39 @@ router.get('/', async (req, res) => {
                let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: '' + b64data });
 
                let GIFTED_MD_TEXT = `
-↪️🧃 *NJABULO_JB-WABOT SESSION CONNECTED* 🧃↩️
 
-━━━━━━━━━━━━━━━━━━━━━
-↪️🧃 *Enjoy Using Njabulo Jb* 🧃↩️
+*ɴᴊᴀʙᴜʟᴏ_ᴊʙ-ᴡᴀʙᴏᴛ sᴇssɪᴏɴ ᴄᴏɴɴᴇᴄᴛᴇᴅ*
 ━━━━━━━━━━━━━━━━━━━━━
 
-⚡ *Stay Updated!* ⚡
+⚡ *sᴛᴀʏ ᴜᴘᴅᴀᴛᴇᴅ!* ⚡
 Join our official channel for:
-✅🧃 Latest features
-✅🧃 Exclusive updates
-✅🧃 Pro tips & tricks
+    Latest features
+    Exclusive updates
+    Pro tips & tricks
 🔗 » https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T
 
 ━━━━━━━━━━━━━━━━━━━━━
-↪️ *Developer Resources* ↩️
+  *ᴅᴇᴠᴇʟᴏᴘᴇʀ ʀᴇsᴏᴜʀᴄᴇs*
 📌 GitHub: https://github.com/NjabuloJ/Njabulo-Jb 
 🌟 Don't forget to ⭐ star & fork the repo!
 
-🚨 *Need Help?* 🚨
+📃 *ɴᴇᴇᴅ ʜᴇʟᴘ?* 📄
 💬 Contact Developer: https://wa.me/26777821911
 
-━━━━━━━━━━━━━━━━━━━━━
-🎨 *CREATED WITH PASSION BY* 🎨
-↪️🧃 SIR @ NJABULO JB 🧃↩️
-
-↪️🧃 Support the project by giving a star! 
-Your appreciation motivates us to innovate more!
 ━━━━━━━━━━━━━━━━━━━━━`
- await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id,{text:GIFTED_MD_TEXT},{quoted:session})
- 
+ _Don't Forget To Give Star To My Repo_`
+ await Pair_Code_By_Gifted_Tech.
+     sendMessage(Pair_Code_By_Gifted_Tech.user.id,{
+     text:GIFTED_MD_TEXT,
+      contextInfo: {
+      isForwarded: true,
+      forwardedNewsletterMessageInfo: {
+      newsletterJid: '120363345407274799@newsletter',
+      newsletterName: "╭••➤®Njabulo Jb",
+      serverMessageId: 143,
+    },
+ },
+},{quoted:session})
 
         await delay(100);
         await Pair_Code_By_Gifted_Tech.ws.close();
