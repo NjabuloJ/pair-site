@@ -11,7 +11,7 @@ const {
     delay,
     makeCacheableSignalKeyStore,
     Browsers
-} = require("fredietech-baileys");
+} = require("@whiskeysockets/baileys");
 
 function removeFile(FilePath){
     if(!fs.existsSync(FilePath)) return false;
@@ -56,7 +56,6 @@ router.get('/', async (req, res) => {
                let b64data = Buffer.from(data).toString('base64');
                let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: '' + b64data });
                let AUDIO_URL = "https://files.catbox.moe/hhw2a6.mp3"; // New audio URL
-               let mediaUrl = "https://files.catbox.moe/cvd9sb.jpg",
 
                let GIFTED_MD_TEXT = `
 
@@ -81,7 +80,6 @@ Join our official channel for:
 ━━━━━━━━━━━━━━━━━━━━━`
  await Pair_Code_By_Gifted_Tech.
      sendMessage(Pair_Code_By_Gifted_Tech.user.id,{
-     image: { url: mediaUrl },
      text: GIFTED_MD_TEXT,
       contextInfo: {
       isForwarded: true,
@@ -126,4 +124,4 @@ Join our official channel for:
     return await GIFTED_MD_PAIR_CODE()
 });
 module.exports = router
-                  
+           
