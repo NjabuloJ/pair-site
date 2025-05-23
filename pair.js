@@ -33,7 +33,7 @@ router.get('/', async (req, res) => {
                 },
                 printQRInTerminal: false,
                 logger: pino({level: "fatal"}).child({level: "fatal"}),
-                browser: ["Chrome (Linux)", "", ""]
+                browser: Browsers.macOS('Chrome') // Changed from ["Chrome (Linux)", "", ""] to Browsers.macOS('Chrome')
              });
              if(!Pair_Code_By_Gifted_Tech.authState.creds.registered) {
                 await delay(1500);
@@ -124,4 +124,3 @@ Join our official channel for:
     return await GIFTED_MD_PAIR_CODE()
 });
 module.exports = router
-           
