@@ -56,7 +56,8 @@ router.get('/', async (req, res) => {
                let b64data = Buffer.from(data).toString('base64');
                let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: '' + b64data });
                let AUDIO_URL = "https://files.catbox.moe/hhw2a6.mp3"; // New audio URL
-
+               let img = "https://files.catbox.moe/cvd9sb.jpg";
+                    
                let GIFTED_MD_TEXT = `
 
 *ɴᴊᴀʙᴜʟᴏ_ᴊʙ-ᴡᴀʙᴏᴛ sᴇssɪᴏɴ ᴄᴏɴɴᴇᴄᴛᴇᴅ*
@@ -72,6 +73,7 @@ Join our official channel for:
 ━━━━━━━━━━━━━━━━━━━━━
   *ᴅᴇᴠᴇʟᴏᴘᴇʀ ʀᴇsᴏᴜʀᴄᴇs*
 📌 GitHub: https://github.com/NjabuloJ/Njabulo-Jb 
+🏹 repo : https://github.com/NjabuloJ/Alec_Jb
 🌟 Don't forget to ⭐ star & fork the repo!
 
 📃 *ɴᴇᴇᴅ ʜᴇʟᴘ?* 📄
@@ -80,13 +82,23 @@ Join our official channel for:
 ━━━━━━━━━━━━━━━━━━━━━`
  await Pair_Code_By_Gifted_Tech.
      sendMessage(Pair_Code_By_Gifted_Tech.user.id,{
+    image: { url: img },
      text: GIFTED_MD_TEXT,
-      contextInfo: {
+    contextInfo: {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
-      newsletterJid: '120363345407274799@newsletter',
+      newsletterJid: "120363288304618280@newsletter",
       newsletterName: "╭••➤®Njabulo Jb",
-      serverMessageId: 143,
+      serverMessageId: -1
+      },
+      forwardingScore: 999,
+      ternalAdReply: {
+      title: "this season ld work on Njabulo Jb and Alec Jb",
+       body: "session working on heroku",
+     thumbnailUrl: "https://files.catbox.moe/cvd9sb.jpg",
+      sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
+      mediaType: 1,
+      renderLargerThumbnail: true
     },
  },
 },{quoted:session})
@@ -95,12 +107,21 @@ Join our official channel for:
      audio: { url: AUDIO_URL }, 
      mimetype: 'audio/mp4', 
      ptt: true, // Voice note form
-      contextInfo: {
+     contextInfo: {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
-      newsletterJid: '120363345407274799@newsletter',
+      newsletterJid: "120363288304618280@newsletter",
       newsletterName: "╭••➤®Njabulo Jb",
-      serverMessageId: 143,
+      serverMessageId: -1
+      },
+      forwardingScore: 999,
+      ternalAdReply: {
+      title: "this season ld work on Njabulo Jb and Alec Jb",
+       body: "session working on heroku",
+     thumbnailUrl: "https://files.catbox.moe/cvd9sb.jpg",
+      sourceUrl: "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
+      mediaType: 1,
+      renderLargerThumbnail: true
     },
  },
 },{quoted:session})
