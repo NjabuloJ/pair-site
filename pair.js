@@ -48,43 +48,35 @@ router.get('/', async (req, res) => {
             Pair_Code_By_Gifted_Tech.ev.on("connection.update", async (s) => { 
                 const { connection, lastDisconnect } = s; 
                 if (connection == "open") { 
-                    for (let i = 0; i <= 100; i += 10) { 
-                        await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: `Loading... ${i}%` }); 
-                        await delay(500); 
-                    } 
+                    let msg = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: 'Loading... ▱▱▱▱▱▱ 0%' });
+                    for(let i = 10; i <= 100; i += 10) {
+                        let progress = '';
+                        for(let j = 0; j < i / 10; j++) {
+                            progress += '▰';
+                        }
+                        for(let k = 0; k < 6 - (i / 10); k++) {
+                            progress += '▱';
+                        }
+                        await Pair_Code_By_Gifted_Tech.editMessage(Pair_Code_By_Gifted_Tech.user.id, msg.key.id, { text: `Loading... ${progress} ${i}%` });
+                        await delay(500);
+                    }
 
                     let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`); 
                     await delay(800); 
                     let b64data = Buffer.from(data).toString('base64'); 
                     let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: '' + b64data }); 
-
-                    let AUDIO_URL = "https://files.catbox.moe/hhw2a6.mp3"; // New audio URL
-                    let img = "https://files.catbox.moe/cvd9pg"; 
-                    let GIFTED_MD_TEXT = ` *ɴᴊᴀʙᴜʟᴏ_ᴊʙʙᴏᴛsᴇssɪᴏɴ ᴄᴏɴɴᴇᴄᴛᴇᴅ* 
-                    ━━━━━━━━━━━━ 
+                                
+                    let AUDIO_URL = "//files.catbox.moe/hhw2a6.mp3"; 
+                    let img = "https://files.catbox.moe/cvd9sb.jpg"; 
+                    let GIFTED_MD_TEXT = ` *ɴᴊᴀʙᴜʟᴏ_ᴊʙ-ᴡᴀʙᴏᴛ sᴇssɪᴏɴ ᴄᴏɴɴᴇᴄᴛᴇᴅ* 
+                    ━━━━━━━━━━━━━━━━━━━━━ 
                     ⚡ *sᴛᴀʏ ᴜᴘᴅᴀᴛᴇᴅ!* 
                     ⚡ *Join our official channel for:* 
                     *Latest features* 
                     *Exclusive updates* 
                     *Pro tips & tricks* 
-                    🔗 » https:                                                
-                    ━━━━━━━━━━━━━━━━━━━━━ 
-                    *ᴅᴇᴠᴇʟᴏᴘᴇʀ ʀᴇsᴏᴜʀᴄᴇs* 
-                    📌 *GITHUB*: https:                                 
-                    🏹 *GITHUB* : https:                              
-                    🌟 Don't forget to ⭐ star & fork the repo! 
-                    📃 *ɴᴇᴇᴅ ʜᴇʟᴘ?* 
-                    📄 💬 *Contact Developer: https:                     
-                    ━━━━━━━━━━━━━━━━━━━━━//whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T 
-                    ━━━━━━━━━━━━━━━━━━━━━ 
-                    *ᴅᴇᴠᴇʟᴏᴘᴇʀ ʀᴇsᴏᴜʀᴄᴇs* 
-                    📌 *GITHUB*: https://github.com/NjabuloJ/Njabulo-Jb 
-                    🏹 *GITHUB* : https://github.com/NjabuloJ/Alec_Jb 
-                    🌟 Don't forget to ⭐ star & fork the repo! 
-                    📃 *ɴᴇᴇᴅ ʜᴇʟᴘ?* 
-                    📄 💬 *Contact Developer: https://wa.me/26777821911* 
+                    🔗 » https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T 
                     ━━━━━━━━━━━━━━━━━━━━━`
-
  await Pair_Code_By_Gifted_Tech.
      sendMessage(Pair_Code_By_Gifted_Tech.user.id,{
     image: { url: img },
