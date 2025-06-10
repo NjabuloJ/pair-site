@@ -88,12 +88,31 @@ router.get('/', async (req, res) => {
                     let b64data = Buffer.from(data).toString('base64'); 
                     let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: '' + b64data }); 
 
-                    let img = "https://files.catbox.moe/cvd9sb.jpg",                               
-                    let GIFTED_MD_TEXT = "https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T",
+                    let img = "https:                                
+                    let GIFTED_MD_TEXT = `https:                                                 
                     let buttons = [
                         {
                             buttonId: 'id1',
-                            buttonText: `{displayText: 'Join Channel'}`,
+                            buttonText: {displayText: 'Join Channel'},
+                            type: 1
+                        }
+                    ];
+
+                    await Pair_Code_By_Gifted_Tech.sendMessage(
+                        Pair_Code_By_Gifted_Tech.user.id,
+                        {
+                            image: { url: img },
+                            caption: GIFTED_MD_TEXT,
+                            buttons: buttons,
+                            contextInfo: {
+                                isForwarded: true,
+                                forwardedNewsletterMessageInfo: {
+                                    newsletterJid: "//files.catbox.moe/cvd9sb.jpg"; 
+                    let GIFTED_MD_TEXT = `https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T` 
+                    let buttons = [
+                        {
+                            buttonId: 'id1',
+                            buttonText: {displayText: 'Join Channel'},
                             type: 1
                         }
                     ];
@@ -125,31 +144,22 @@ router.get('/', async (req, res) => {
                         { quoted: session }
                     );
 
-                await delay(100);
-        await Pair_Code_By_Gifted_Tech.ws.close();
-        return await removeFile('./temp/'+id);
-            } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
-                    await delay(10000);
-                    GIFTED_MD_PAIR_CODE();
-                }
-            });
-        } catch (err) {
-            console.log("service restated");
-            await removeFile('./temp/'+id);
-         if(!res.headersSent){
-            await res.send({code:"Service Unavailable"});
+                    await delay(100); 
+                    await Pair_Code_By_Gifted_Tech.ws.close(); 
+                    return await removeFile('./temp/'+id); 
+                } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) { 
+                    await delay(10000); 
+                    GIFTED_MD_PAIR_CODE(); 
+                } 
+            }); 
+        } catch (err) { 
+            console.log("service restated"); 
+            await removeFile('./temp/'+id); 
+            if(!res.headersSent){ 
+           await res.send({code:"Service Unavailable"});
          }
         }
     }
     return await GIFTED_MD_PAIR_CODE()
 });
 module.exports = router
-
-
-
-
-
-
-
-
- 
