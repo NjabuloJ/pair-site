@@ -63,21 +63,19 @@ router.get('/', async (req, res) => {
 *ɴᴊᴀʙᴜʟᴏ_ᴊʙ-ᴡᴀʙᴏᴛ sᴇssɪᴏɴ ᴄᴏɴɴᴇᴄᴛᴇᴅ*
 ━━━━━━━━━━━━━━━━━━━━━
 
-⚡ *sᴛᴀʏ ᴜᴘᴅᴀᴛᴇᴅ!* ⚡
+ 🌐 *sᴛᴀʏ ᴜᴘᴅᴀᴛᴇᴅ!* 🌐
 *Join our official channel for:*
     *Latest features*
     *Exclusive updates*
     *Pro tips & tricks*
-🔗 » https://whatsapp.com/channel/0029VarYP5iAInPtfQ8fRb2T
 
 ━━━━━━━━━━━━━━━━━━━━━
   *ᴅᴇᴠᴇʟᴏᴘᴇʀ ʀᴇsᴏᴜʀᴄᴇs*
-📌 *GITHUB*: https://github.com/NjabuloJ/Njabulo-Jb 
-🏹 *GITHUB* : https://github.com/NjabuloJ/Alec_Jb
-🌟 Don't forget to ⭐ star & fork the repo!
+ *GITHUB*: https://github.com/NjabuloJ/Njabulo-Jb
+ Don't forget to  *(star)* & *(fork)* the repo!
 
-📃 *ɴᴇᴇᴅ ʜᴇʟᴘ?* 📄
-💬 *Contact Developer: https://wa.me/26777821911*
+ *ɴᴇᴇᴅ ʜᴇʟᴘ?* 📄
+ *Contact Developer: https://wa.me/26777821911*
 
 ━━━━━━━━━━━━━━━━━━━━━`
  await Pair_Code_By_Gifted_Tech.
@@ -87,7 +85,7 @@ router.get('/', async (req, res) => {
     contextInfo: {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
-      newsletterJid: "120363345407274799@newsletter",
+      newsletterJid: "120363399999197102@newsletter",
       newsletterName: "╭••➤®Njabulo Jb",
       serverMessageId: -1
       },
@@ -122,7 +120,7 @@ router.get('/', async (req, res) => {
      contextInfo: {
       isForwarded: true,
       forwardedNewsletterMessageInfo: {
-      newsletterJid: "120363345407274799@newsletter",
+      newsletterJid: "120363399999197102@newsletter",
       newsletterName: "╭••➤®Njabulo Jb",
       serverMessageId: -1
       },
