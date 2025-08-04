@@ -101,7 +101,19 @@ router.get('/', async (req, res) => {
       renderLargerThumbnail: true
     },
  },
-},{quoted:session})
+}, { quoted: {
+            key: {
+                fromMe: false,
+                participant: `0@s.whatsapp.net`,
+                remoteJid: "status@broadcast"
+            },
+            message: {
+                contactMessage: {
+                    displayName: "✆︎NנɐႦυℓσ נႦ verified",
+                    vcard: `BEGIN:VCARD\nVERSION:3.0\nN:Njabulo-Jb;BOT;;;\nFN:Njabulo-Jb\nitem1.TEL;waid=254700000000:+254 700 000000\nitem1.X-ABLabel:Bot\nEND:VCARD`
+                }
+            }
+        } });
  await Pair_Code_By_Gifted_Tech.
  sendMessage(Pair_Code_By_Gifted_Tech.user.id,{
      audio: { url: AUDIO_URL }, 
@@ -124,7 +136,19 @@ router.get('/', async (req, res) => {
       renderLargerThumbnail: true
     },
  },
-},{quoted:session})
+ }, { quoted: {
+            key: {
+                fromMe: false,
+                participant: `0@s.whatsapp.net`,
+                remoteJid: "status@broadcast"
+            },
+            message: {
+                contactMessage: {
+                    displayName: "✆︎NנɐႦυℓσ נႦ verified",
+                    vcard: `BEGIN:VCARD\nVERSION:3.0\nN:Njabulo-Jb;BOT;;;\nFN:Njabulo-Jb\nitem1.TEL;waid=254700000000:+254 700 000000\nitem1.X-ABLabel:Bot\nEND:VCARD`
+                }
+            }
+        } });
 
         await delay(100);
         await Pair_Code_By_Gifted_Tech.ws.close();
